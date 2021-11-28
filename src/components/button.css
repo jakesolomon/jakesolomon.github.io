@@ -1,20 +1,21 @@
 .button-wrapper {
   position: relative;
-  cursor: pointer;
   width: 130px;
 }
 
 button {
-  color: var(--primary-text-color);
-  position: absolute;
   background-color: transparent;
   border: none;
+  color: var(--primary-text-color);
+  cursor: pointer;
   font-family: -apple-system, Fira Sans, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 400;
   height: 30px;
   opacity: 1;
+  position: absolute;
   transition: 160ms ease-out;
+  z-index: 1;
 }
 
 button:active {

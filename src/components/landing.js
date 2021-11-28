@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import Hero from "./hero.js";
 import ReadMore from "./readMore.js";
 import LandingBackground from "./landingBackground.js";
-import InspectElement from "./inspectElement.js";
 import Button from "./button.js";
 
 import "./landing.css";
@@ -39,10 +38,10 @@ class Landing extends Component {
     );
 
     const closeReadMore = (
-      <div className="close-about-me" onClick={() => this.props.readLess()} >
+      <button className="close-about-me" onClick={() => this.props.readLess()} >
         <span />
         <span />
-      </div>
+      </button>
     );
 
     return(

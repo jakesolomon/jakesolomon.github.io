@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import "./button.css";
 
@@ -28,11 +28,15 @@ function Button(props) {
   return(
     <div
       className="button-wrapper"
-      onMouseMove={() => buttonHover(props.clicked)}
-      onMouseLeave={() => buttonLeave(props.clicked)}
-      onClick={() => onClick()}
     >
-      <button className={buttonText} >{props.text}</button>
+      <button
+        className={buttonText}
+        onClick={() => onClick()}
+        onMouseMove={() => buttonHover(props.clicked)}
+        onMouseLeave={() => buttonLeave(props.clicked)}
+      >
+        {props.text}
+      </button>
       <div className={buttonBorderTop} />
       <div className={buttonBorderRight} />
       <div className={buttonBorderBottom} />

@@ -78,7 +78,7 @@ class Contact extends Component {
           Message:
           <textarea type="text" name="message" value={this.state.message} onChange={this.handleChangeMessage} autoComplete="off" />
         </label>
-        {status === "SUCCESS" ? <p>Thank you!</p> : <Button clicked={this.state.status != ""} text="Send" onClick={() => this.submitForm()}/>}
+        {status === "SUCCESS" ? <p>Thank you!</p> : <Button clicked={this.state.status !== ""} text="Send" onClick={() => this.submitForm()}/>}
         {status === "ERROR" && <p>Oops! There was an error.</p>}
       </form>
     );

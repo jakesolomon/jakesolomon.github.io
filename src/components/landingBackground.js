@@ -39,7 +39,7 @@ function LandingBackground(props) {
 
   var mouseMoveScale;
 
-  if (props.state.transition == "hero") {
+  if (props.state.transition === "hero") {
     lineTopStart = windowWidth*0.05;
     lineRightStart = windowWidth*0.13;
     lineBottomStart = windowWidth*0.05;
@@ -50,7 +50,7 @@ function LandingBackground(props) {
 
     mouseMoveScale = 1;
   }
-  else if (props.state.transition == "readMore") {
+  else if (props.state.transition === "readMore") {
     lineTopStart = windowWidth*0.50;
     lineRightStart = windowWidth*0.33;
     lineBottomStart = -windowWidth*0.2;
@@ -61,7 +61,7 @@ function LandingBackground(props) {
 
     mouseMoveScale = 0.5;
   }
-  else if (props.state.transition == "contact") {
+  else if (props.state.transition === "contact") {
     lineTopStart = windowWidth*0.45;
     lineRightStart = windowWidth*0.28;
     lineBottomStart = -windowWidth*0.7;
@@ -93,7 +93,7 @@ function LandingBackground(props) {
       />
       <div
         className="landing-to-projects-indicator"
-        style={props.state.transition != "hero" || loading ? {opacity: 0} : {opacity: 1}}
+        style={props.state.transition !== "hero" || loading ? {opacity: 0} : {opacity: 1}}
       >
         <p>Projects</p>
         <div className="landing-to-projects-line"/>

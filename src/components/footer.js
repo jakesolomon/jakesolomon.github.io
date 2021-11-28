@@ -10,7 +10,7 @@ const Footer = () => (
       <Social display="horizontal"/>
       © {new Date().getFullYear()}, built with
       {` `}
-      <a href="https://www.gatsbyjs.org" target="_blank">Gatsby</a>.
+      <a href="https://www.gatsbyjs.org" target="_blank" rel="noreferrer">Gatsby</a>.
     </div>
   </footer>
 );

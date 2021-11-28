@@ -10,7 +10,7 @@ function ReadMore(props) {
   var aboutMeContent = "about-me-content";
   var contactClass = "contact-container about-me-disappear";
   if (props.state.readMore) { aboutMeClass += " read-more-container-appear"; }
-  if (props.state.transition != "readMore") { aboutMeContent += " about-me-disappear"; }
+  if (props.state.transition !== "readMore") { aboutMeContent += " about-me-disappear"; }
   if (props.state.viewContact) { contactClass = "contact-container"; }
 
   return(

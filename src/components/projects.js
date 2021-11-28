@@ -5,25 +5,15 @@ import "./projects.css";
 import areaMockup from "../images/area_mockup.png";
 import tutorstatMockup from "../images/tutorstat.png";
 import goodweather from "../images/goodweather.png";
-import react from "../images/react.png";
-import ruby from "../images/ruby.png";
 
 function Projects(props) {
-
-  const reactIcon = (
-    <img className="software-icons" src={react} alt="react icon" />
-  );
-
-  const rubyIcon = (
-    <img className="software-icons" src={ruby} alt="react icon" />
-  );
 
   const areaDescription = (
     <p className="project-description">
       <b>Area</b> is a location-sharing app that highlights user-generated content.<br/><br/>
-      I developed the browser version of this app in React and designed the database schema using <a href="https://hasura.io/cloud/" target="_blank">Hasura Cloud</a>.
+      I developed the browser version of this app in React and designed the database schema using <a href="https://hasura.io/cloud/" target="_blank" rel="noreferrer">Hasura Cloud</a>.
       My work is being used as a foundation for the development of an accompanying native mobile app, and both will be officially released in Spring 2021.<br/><br/>
-      Area is also powered by <a href="https://stripe.com/" target="_blank">Stripe</a>, <a href="https://auth0.com/" target="_blank">Auth0</a>, <a href="https://cloudinary.com/" target="_blank">Cloudinary</a>, and <a href="https://developers.google.com/maps/documentation/javascript/overview" target="_blank">Google Maps API</a>.
+      Area is also powered by <a href="https://stripe.com/" target="_blank" rel="noreferrer">Stripe</a>, <a href="https://auth0.com/" target="_blank" rel="noreferrer">Auth0</a>, <a href="https://cloudinary.com/" target="_blank" rel="noreferrer">Cloudinary</a>, and <a href="https://developers.google.com/maps/documentation/javascript/overview" target="_blank" rel="noreferrer">Google Maps API</a>.
       <br/><br/>
       If you'd like to know more, <a href="#landing" onClick={props.straightToContact}>send me a message</a>. I'd love to chat about it.
     </p>
@@ -48,11 +38,11 @@ function Projects(props) {
 
   const goodWeatherDescription = (
     <p className="project-description">
-      <a href="https://jakesolomon.github.io/fair-weather" target="_blank"><b>The Good Weather Map</b></a> is
+      <a href="https://jakesolomon.github.io/fair-weather" target="_blank" rel="noreferrer"><b>The Good Weather Map</b></a> is
       my take on a classic weather app API demo.<br/><br/>
       It searches for states with clear skies and nice temperatures, and
       highlights them on the US map. You can find the
-      code <a href="https://github.com/jakesolomon/fair-weather" target="_blank">on my GitHub</a>.
+      code <a href="https://github.com/jakesolomon/fair-weather" target="_blank" rel="noreferrer">on my GitHub</a>.
     </p>
   );
 
