@@ -1,18 +1,20 @@
-**Branch structure**
+1. **Branch structure**
 
     Feature branch is for development.
     Master branch is for merging changes from Feature.
     Gh-pages branch is deployed to https://jakesolomon.github.io/
 
-**Useful scripts**
+2. **Useful scripts**
 
     This project's dependencies are managed with npm.
     `npm run start` will start a local instance to localhost:8000
     `npm run deploy` will build to the gh-pages branch.
 
-**Gatsby Resources**
+3. **Gatsby Resources**
 
     This project is built on Gatsby.
+
+4.  **Learn more**
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
