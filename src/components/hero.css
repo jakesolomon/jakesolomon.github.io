@@ -4,15 +4,52 @@
   position: absolute;
   left: -15px;
 
-  transition: 700ms cubic-bezier(1,0,.5,1);
+  transition: 200ms cubic-bezier(1,0,.5,1);
 }
 
 .hero-title {
   font-size: 4.6em;
   margin-bottom: 0.1em;
-  letter-spacing: .03em;
+  /*letter-spacing: .03em;*/
 
+  transition: 350ms cubic-bezier(.69,0,.19,1);
+}
+
+.spread-title {
+  letter-spacing: .03em;
+}
+.hero-title span{
   transition: 400ms cubic-bezier(.69,0,.19,1);
+}
+
+.medallion span:nth-child(n+2):nth-child(-n+5) {
+  opacity: 0;
+  font-size: 0;
+}
+
+.spread-title span:nth-child(n+2):nth-child(-n+5) {
+  opacity: 0;
+  /*font-size: 1;*/
+}
+
+.fade-in-title span:nth-child(n+2):nth-child(-n+5) {
+  opacity: 1;
+  /*font-size: 1;*/
+}
+
+.medallion span:nth-child(n+7):nth-child(-n+12) {
+  opacity: 0;
+  font-size: 0;
+}
+
+.spread-title span:nth-child(n+7):nth-child(-n+12) {
+  opacity: 0;
+  /*font-size: 1;*/
+}
+
+.fade-in-title span:nth-child(n+7):nth-child(-n+12) {
+  opacity: 1;
+  /*font-size: 1;*/
 }
 
 .hero-subtitle {
@@ -21,11 +58,19 @@
   font-weight: 350;
   margin-bottom: .9em;
 
-  transition: 700ms cubic-bezier(.26,.01,0,1);
+  transition: 200ms cubic-bezier(.46,.31,.61,.96);
 }
 
 .disappear {
   opacity: 0;
+}
+
+.read-more-button-wrapper {
+  transition: 300ms cubic-bezier(.46,.31,.61,.96);
+}
+
+.hero-social {
+  transition: 500ms cubic-bezier(.46,.31,.61,.96);
 }
 
 @media only screen and (max-width: 800px) {
