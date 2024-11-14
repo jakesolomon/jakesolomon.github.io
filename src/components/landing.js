@@ -12,14 +12,21 @@ class Landing extends Component {
     super(props);
     this.state = {
       windowWidth: 0,
-      loading: true
+      loadingPhase: 0
     };
   }
 
   componentDidMount() {
     this.setState( {windowWidth: window.innerWidth} );
-    setTimeout(() => {  this.setState( {loading: false} ); }, 300);
+    setTimeout(() => {  this.setState( {loadingPhase: 1} ); }, 500);
+    setTimeout(() => {  this.setState( {loadingPhase: 2} ); }, 1000);
+    setTimeout(() => {  this.setState( {loadingPhase: 3} ); }, 2000);
+    setTimeout(() => {  this.setState( {loadingPhase: 4} ); }, 2300);
+    setTimeout(() => {  this.setState( {loadingPhase: 5} ); }, 3200);
+    setTimeout(() => {  this.setState( {loadingPhase: 6} ); }, 3350);
+    setTimeout(() => {  this.setState( {loadingPhase: 7} ); }, 3500);
   }
+
 
   render() {
 
@@ -46,8 +53,11 @@ class Landing extends Component {
 
     return(
       <div className="landing" id="landing">
-        <div className="hero-container" style={{opacity: this.state.loading ? "0" : "1"}}>
-          <Hero state={this.props.pageState} readMoreButton={readMoreButton} />
+        <div className="hero-container">
+          <Hero
+            loadingPhase={this.state.loadingPhase}
+            state={this.props.pageState}
+            readMoreButton={readMoreButton} />
         </div>
         <ReadMore
           state={this.props.pageState}
@@ -56,6 +66,7 @@ class Landing extends Component {
           viewProjectsButton={viewProjectsButton}
         />
         <LandingBackground
+          loadingPhase={this.state.loadingPhase}
           state={this.props.pageState}
           windowWidth={this.state.windowWidth}
         />

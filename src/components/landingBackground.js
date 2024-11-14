@@ -95,8 +95,8 @@ function LandingBackground(props) {
         className="landing-to-projects-indicator"
         style={props.state.transition !== "hero" || loading ? {opacity: 0} : {opacity: 1}}
       >
-        <p>Projects</p>
-        <div className="landing-to-projects-line"/>
+        <p style={{opacity: props.loadingPhase >= 7 ? "1" : "0"}}>Projects</p>
+        <div className="landing-to-projects-line" style={{opacity: props.loadingPhase >= 7 ? "1" : "0"}}/>
       </div>
     </div>
   );
