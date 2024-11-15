@@ -2,20 +2,27 @@ import React from "react";
 
 import "./projects.css";
 
+import aPDesignMockup from "../images/cost-insight-design-2.webp";
 import areaMockup from "../images/area_mockup.png";
 import tutorstatMockup from "../images/tutorstat.png";
-import goodweather from "../images/goodweather.png";
 
-function Projects(props) {
+function Projects() {
+
+  const aPDesignDescription = (
+    <p className="project-description">
+      <b>aP Design</b> is a cost optimization solution for design engineers. <br/><br/>
+      I worked on this project for three years at <a href="https://www.apriori.com/" target="_blank" rel="noreferrer">aPriori Technologies</a>,
+      joining right at the V1 release but seeing the project through over a dozen enhancements.
+      The app is built using React/Typescript and is supported by a Java/Spring Boot microservice backend, housed on AWS.<br/><br/>
+    </p>
+  );
 
   const areaDescription = (
     <p className="project-description">
+    <br/>
       <b>Area</b> is a location-sharing app that highlights user-generated content.<br/><br/>
-      I developed the browser version of this app in React and designed the database schema using <a href="https://hasura.io/cloud/" target="_blank" rel="noreferrer">Hasura Cloud</a>.
-      My work is being used as a foundation for the development of an accompanying native mobile app, and both will be officially released in Spring 2021.<br/><br/>
-      Area is also powered by <a href="https://stripe.com/" target="_blank" rel="noreferrer">Stripe</a>, <a href="https://auth0.com/" target="_blank" rel="noreferrer">Auth0</a>, <a href="https://cloudinary.com/" target="_blank" rel="noreferrer">Cloudinary</a>, and <a href="https://developers.google.com/maps/documentation/javascript/overview" target="_blank" rel="noreferrer">Google Maps API</a>.
-      <br/><br/>
-      If you'd like to know more, <a href="#landing" onClick={props.straightToContact}>send me a message</a>. I'd love to chat about it.
+      I built the browser-native MVP to be used as a foundation for the development of an accompanying native mobile app.
+      Area is built on React, and is powered by <a href="https://hasura.io/cloud/" target="_blank" rel="noreferrer">Hasura Cloud</a>, <a href="https://stripe.com/" target="_blank" rel="noreferrer">Stripe</a>, <a href="https://auth0.com/" target="_blank" rel="noreferrer">Auth0</a>, <a href="https://cloudinary.com/" target="_blank" rel="noreferrer">Cloudinary</a>, and <a href="https://developers.google.com/maps/documentation/javascript/overview" target="_blank" rel="noreferrer">Google Maps API</a>.
     </p>
   );
 
@@ -31,39 +38,29 @@ function Projects(props) {
   const tutorstatDescription = (
     <p className="project-description">
       <b>Tutorstat</b> is an internal data analytics app that shows insights about tutor and student performance.<br/><br/>
-      I developed this project for a test-prep center to help inform training policy and educate clients.<br/><br/>
-      I use React for front-end. Data is processed in Ruby before served via Fetch API and displayed using React Vis.<br/><br/>
-    </p>
-  );
-
-  const goodWeatherDescription = (
-    <p className="project-description">
-      <a href="https://jakesolomon.github.io/fair-weather" target="_blank" rel="noreferrer"><b>The Good Weather Map</b></a> is
-      my take on a classic weather app API demo.<br/><br/>
-      It searches for states with clear skies and nice temperatures, and
-      highlights them on the US map. You can find the
-      code <a href="https://github.com/jakesolomon/fair-weather" target="_blank" rel="noreferrer">on my GitHub</a>.
+      I developed this project for a test-prep center to help inform training policy and educate clients.
+      Tutorstat is built using react. Data is processed in Ruby and displayed using React Vis.<br/><br/>
     </p>
   );
 
   return(
     <div style={{marginBottom: "130px"}} id="projects">
       <div className="projects-container">
-        <h2>What I'm Working on</h2>
-        <img className="project-image" src={areaMockup} alt="location sharing app" />
-        <br/>
+        <h1>Experience</h1>
+        <div style={{transform: "translateY(-2em)"}}>
+          <img className="project-image project-image-large" src={aPDesignMockup} alt="thing"/>
+        </div>
+        {aPDesignDescription}
+      </div>
+      <div className="projects-container">
+        <h2>Freelance</h2>
+        <img className="project-image" src={areaMockup} alt="location sharing app"/>
         {areaDescription}
         {areaReview}
       </div>
       <div className="projects-container">
-        <img className="project-image" src={tutorstatMockup} alt="data analytics app" />
-        <br/>
+        <img className="project-image project-image-large" src={tutorstatMockup} alt="data analytics app"/>
         {tutorstatDescription}
-      </div>
-      <div className="projects-container">
-        <img className="project-image" src={goodweather} alt="weather app" />
-        <br/>
-        {goodWeatherDescription}
       </div>
     </div>
   );

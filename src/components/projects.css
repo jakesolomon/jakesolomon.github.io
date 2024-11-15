@@ -4,12 +4,13 @@
 }
 
 .project-description {
-  max-width: 450px;
+  max-width: 500px;
 }
 
 .project-review {
   font-style: italic;
-  margin: 0px 60px;
+  font-size: 0.8em;
+  /*margin: 0px 60px;*/
 }
 
 .big {
@@ -25,9 +26,13 @@
   object-fit: contain;
 }
 
+.project-image-large {
+  max-width: 650px;
+  max-height: 350px;
+}
+
 .project-image:hover {
-  max-width: 555px;
-  max-height: 305px;
+  transform: scale(103%);
 }
 
 .software-icon {
@@ -67,12 +72,6 @@
 
   .projects-container {
     margin: 50px 0px;
-  }
-
-  .projects-container h1{
-    text-align: center;
-    font-size: 60px;
-    font-size: 8.7vw;
   }
 
 }
