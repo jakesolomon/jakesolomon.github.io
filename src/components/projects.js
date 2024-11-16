@@ -5,7 +5,6 @@ import "./projects.css";
 import aPDesignMockup from "../images/cost-insight-design-2.webp";
 import areaMockup from "../images/area_mockup.png";
 import tutorstatMockup from "../images/tutorstat.png";
-import Spinner from "./spinner";
 
 function Projects() {
 
@@ -14,7 +13,7 @@ function Projects() {
       <b>aP Design</b> is a cost optimization solution for design engineers. <br/><br/>
       I worked on this project for three years at <a href="https://www.apriori.com/" target="_blank" rel="noreferrer">aPriori Technologies</a>,
       joining right at the V1 release but seeing the project through over a dozen enhancements.
-      The app is built using React/Typescript and is supported by a Java/Spring Boot microservice backend, housed on AWS.<br/><br/>
+      The app is built using React/Typescript and is supported by a Java/Spring Boot microservice backend, housed on AWS.
     </p>
   );
 
@@ -48,6 +47,7 @@ function Projects() {
     <div style={{marginBottom: "130px"}} id="projects">
       <div className="projects-container">
         <h1>Experience</h1>
+        <br />
         <div style={{transform: "translateY(-2em)"}}>
           <img className="project-image project-image-large" src={aPDesignMockup} alt="thing"/>
         </div>

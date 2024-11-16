@@ -63,7 +63,7 @@
 
   .project-description {
     max-width: none;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
   }
 
   .project-review {
@@ -71,7 +71,7 @@
   }
 
   .projects-container {
-    margin: 50px 0px;
+    padding: 35px 0;
   }
 
 }
