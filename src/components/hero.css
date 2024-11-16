@@ -10,7 +10,6 @@
 .hero-title {
   font-size: 4.6em;
   margin-bottom: 0.1em;
-  /*letter-spacing: .03em;*/
 
   transition: 350ms cubic-bezier(.69,0,.19,1);
 }
@@ -29,12 +28,10 @@
 
 .spread-title span:nth-child(n+2):nth-child(-n+5) {
   opacity: 0;
-  /*font-size: 1;*/
 }
 
 .fade-in-title span:nth-child(n+2):nth-child(-n+5) {
   opacity: 1;
-  /*font-size: 1;*/
 }
 
 .medallion span:nth-child(n+7):nth-child(-n+12) {
@@ -44,12 +41,10 @@
 
 .spread-title span:nth-child(n+7):nth-child(-n+12) {
   opacity: 0;
-  /*font-size: 1;*/
 }
 
 .fade-in-title span:nth-child(n+7):nth-child(-n+12) {
   opacity: 1;
-  /*font-size: 1;*/
 }
 
 .hero-subtitle {
@@ -81,10 +76,7 @@
   }
 
   .hero-title {
-    font-size: 3em;
     font-size: 11vw;
-    line-height: 1.3em;
-    /* margin-right: 10px; */
   }
 
   .hero-subtitle {
@@ -92,7 +84,6 @@
     font-size: 4.5vw;
     line-height: 1.3em;
     letter-spacing: .01em;
-    /* margin-right: 100px; */
   }
 
   .hero-social {

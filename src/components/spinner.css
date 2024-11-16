@@ -1,38 +1,63 @@
-/*.spinner {*/
-/*    animation: rotate 2s linear infinite;*/
-/*    z-index: 2;*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    margin: -25px 0 0 -25px;*/
-/*    width: 50px;*/
-/*    height: 50px;*/
+.loader {
+    display: block;
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.8em;
+    left: -1em;
+    animation: rotate 1.3s cubic-bezier(.87,.01,.61,1.01) infinite;
+}
 
-/*    & .path {*/
-/*        stroke: hsl(210, 70, 75);*/
-/*        stroke-linecap: round;*/
-/*        animation: dash 1.5s ease-in-out;*/
-/*    }*/
+.loader-big{
+    transform: scale(108%) rotate(220deg) !important;
+}
 
-/*}*/
+.loader-small{
+    transform: scale(92%) rotate(90deg) !important;
+}
 
-/*@keyframes rotate {*/
-/*    100% {*/
-/*        transform: rotate(360deg);*/
-/*    }*/
-/*}*/
+.loader::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 0.3rem solid #FFF;
+    animation: prixClipFix 1.3s linear;
+    animation-fill-mode: forwards;
+}
 
-/*@keyframes dash {*/
-/*    0% {*/
-/*        stroke-dasharray: 1, 150;*/
-/*        stroke-dashoffset: 0;*/
-/*    }*/
-/*    50% {*/
-/*        stroke-dasharray: 90, 150;*/
-/*        stroke-dashoffset: -35;*/
-/*    }*/
-/*    100% {*/
-/*        stroke-dasharray: 90, 150;*/
-/*        stroke-dashoffset: -124;*/
-/*    }*/
+.loader-big::before {
+    animation-duration: 0.7s !important;
+}
+
+.loader-big::before {
+    animation-duration: 1s !important;
+}
+
+
+@keyframes rotate {
+    100%   {transform: rotate(200deg)}
+}
+
+
+@keyframes prixClipFix {
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    12.5%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    42.5%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    50%  {clip-path:polygon(50% 50%,0% 0,100% 0,100% 100%,0 100%,0 0)}
+    62.5%  {clip-path:polygon(50% 50%,100% 0,100% 0,100% 100%,0 100%,0 0)}
+    75%  {clip-path:polygon(50% 50%,100% 100%,100% 100%,100% 100%,0 100%,0 0)}
+    87.5%  {clip-path:polygon(50% 50%,0 100%,0 100%,0 100%,0 100%,0 0)}
+    100%  {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+}
+
+/*@keyframes prixClipFix {*/
+/*    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}*/
+/*    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}*/
+/*    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}*/
+/*    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}*/
+/*    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}*/
 /*}*/

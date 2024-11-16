@@ -3,6 +3,7 @@ import React from "react";
 import "./hero.css";
 
 import Social from "./social.js";
+import Spinner from "./spinner";
 
 function Hero(props) {
 
@@ -10,7 +11,6 @@ function Hero(props) {
   var heroTitleLoadingPhase = "";
   if (!props.state.hero) { disappear = "disappear"; }
   if (props.loadingPhase <= 3) { heroTitleLoadingPhase = "medallion"}
-  // if (props.loadingPhase >= 3) { heroTitleLoadingPhase = "spread-title"}
   if (props.loadingPhase >= 4) { heroTitleLoadingPhase = "fade-in-title"}
 
   var hero = `hero ${disappear}`;
@@ -20,11 +20,37 @@ function Hero(props) {
 
   return(
     <div>
-      <div className={hero} >
+      <div
+        className={hero}
+        style={{transform: props.loadingPhase >= 3 ? null : "translateX(calc(37.5vw - 2em))"}}
+      >
+        {
+          props.loadingPhase >= 2 &&
+          <>
+            <div style={{
+              maxHeight: "0",
+              maxWidth: "100%"
+            }}>
+              <Spinner size="small"/>
+            </div>
+            <div style={{
+              maxHeight: "0",
+              maxWidth: "100%"
+            }}>
+              <Spinner/>
+            </div>
+            <div style={{
+              maxHeight: "0",
+              maxWidth: "100%"
+            }}>
+              <Spinner size="big"/>
+            </div>
+          </>
+        }
         <h1
           className={heroTitle}
           style={{
-            transform: props.loadingPhase >= 3 ? null : "translateX(100%) scale(2, 2)",
+            fontSize: props.loadingPhase >= 3 ? null : "8em",
             opacity: props.loadingPhase >= 1 ? "1" : "0",
             size: props.loadingPhase >= 4 ? "0px" : null
           }}

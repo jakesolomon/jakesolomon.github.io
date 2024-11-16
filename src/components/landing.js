@@ -18,8 +18,8 @@ class Landing extends Component {
 
   componentDidMount() {
     this.setState( {windowWidth: window.innerWidth} );
-    setTimeout(() => {  this.setState( {loadingPhase: 1} ); }, 500);
-    setTimeout(() => {  this.setState( {loadingPhase: 2} ); }, 1000);
+    setTimeout(() => {  this.setState( {loadingPhase: 1} ); }, 200);
+    setTimeout(() => {  this.setState( {loadingPhase: 2} ); }, 600);
     setTimeout(() => {  this.setState( {loadingPhase: 3} ); }, 2000);
     setTimeout(() => {  this.setState( {loadingPhase: 4} ); }, 2300);
     setTimeout(() => {  this.setState( {loadingPhase: 5} ); }, 3200);
