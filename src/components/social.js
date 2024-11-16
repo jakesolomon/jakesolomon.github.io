@@ -62,7 +62,7 @@ function Social(props) {
             />
           }
         </div>
-        <button onClick={() => getEmail()} target="_blank" rel="noopener noreferrer" style={{cursor: "pointer"}} aria-label="Email" ><Email /></button>
+        <a onClick={() => getEmail()} target="_blank" rel="noopener noreferrer" style={{cursor: "pointer"}} aria-label="Email" ><Email /></a>
       </li>
     </ul>
   );
