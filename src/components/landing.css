@@ -1,5 +1,4 @@
 .landing {
-  /* background: var(--primary-bg-color); */
   height: 100vh;
 }
 
@@ -95,8 +94,6 @@
 
 @media only screen and (min-width: 64em) {
     .close-about-me:hover {
-        /* -webkit-transform:scale(-1.1);
-        transform: scale(-1.1); */
     }
 
     .close-about-me:hover span:after,.close-contact:hover span:before {
@@ -104,8 +101,6 @@
     }
 
     .close-about-me:hover span:first-child {
-        /* -webkit-transform: rotate(-45deg); */
-        /* transform: rotate(-45deg); */
 
         -webkit-transform:scale(-1.1);
         transform: scale(-1.1);
@@ -114,8 +109,6 @@
     }
 
     .close-about-me:hover span:last-child {
-        /* -webkit-transform: rotate(45deg); */
-        /* transform: rotate(-45deg); */
 
         -webkit-transform:scale(-1.1);
         transform: scale(-1.1);

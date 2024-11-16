@@ -5,6 +5,7 @@ import "./projects.css";
 import aPDesignMockup from "../images/cost-insight-design-2.webp";
 import areaMockup from "../images/area_mockup.png";
 import tutorstatMockup from "../images/tutorstat.png";
+import Spinner from "./spinner";
 
 function Projects() {
 
