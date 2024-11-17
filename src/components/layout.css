@@ -1,3 +1,9 @@
+/* TODO:
+    How to properly import Fira Sans so it works on Safari?
+    Currently using a quick fix by adjusting size based on browser.
+*/
+/*@import url('https://code.cdn.mozilla.net/fonts/fira.css');*/
+
 /* Color Scheme */
 
 :root {
@@ -314,8 +320,8 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, Fira Sans, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Fira Sans, PT Sans, Roboto, BlinkMacSystemFont, Segoe UI, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, -apple-system;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 3rem;
