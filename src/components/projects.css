@@ -1,4 +1,8 @@
-.projects-container {
+.projects-wrapper {
+  margin-bottom: 130px;
+}
+
+.project-container {
   color: var(--secondary-text-color);
   padding: 80px 0px 0px 0px;
 }
@@ -70,8 +74,11 @@
     margin: 0px 0px;
   }
 
-  .projects-container {
+  .project-container {
     padding: 35px 0;
   }
 
+  .projects-wrapper {
+    margin-bottom: 0px;
+  }
 }
