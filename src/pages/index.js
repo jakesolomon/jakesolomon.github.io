@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 
+import "@fontsource/fira-sans/700.css";
+import "@fontsource/fira-sans/400.css";
+
 import Landing from "../components/landing";
 import Projects from "../components/projects";
 import Layout from "../components/layout";
-// import SEO from "../components/seo";
 
 class IndexPage extends Component {
   constructor() {
