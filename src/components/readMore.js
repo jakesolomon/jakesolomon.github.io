@@ -21,7 +21,7 @@ function ReadMore(props) {
         <p style={{marginBottom: "0px"}}>
           I’m a front-end engineer who specializes in building responsive, user-friendly interfaces with React/JavaScript, backed by AWS architecture.
         <br/><br/>
-          I split my week between coding and working at <a href="https://www.barrettsmillfarm.com/" target="_blank">Barrett's Mill Farm</a>. Currently available for part-time contract work in both software and vegetable fields.
+          I split my week between coding and working as a farm hand at <a href="https://www.barrettsmillfarm.com/" target="_blank">Barrett's Mill Farm</a>. Currently available for part-time contract work in both software and vegetable fields.
         </p>
         <div style={{display: "inline-block", marginTop: "1.5rem"}}>
           {props.viewProjectsButton}
