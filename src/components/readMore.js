@@ -18,13 +18,10 @@ function ReadMore(props) {
       {props.closeReadMore}
       <div className={aboutMeContent}>
         <h3>About Me</h3>
-        <p style={{marginBottom: "0px"}}>I enjoy making practical things that feel good to use.
-        Naturally, I love developing simple, intuitive interfaces and repairing ill-maintained electric guitars.
+        <p style={{marginBottom: "0px"}}>
+          I’m a front-end engineer who specializes in building responsive, user-friendly interfaces with React/JavaScript, backed by AWS architecture.
         <br/><br/>
-        My journey as a developer has occurred very organically: each
-        lesson learned has first presented itself as a nasty roadblock in an interesting project.
-        I specialize in React, JavaScript, and relational databases, and am always looking
-        forward to the next lesson.
+          I split my week between coding and working at <a href="https://www.barrettsmillfarm.com/" target="_blank">Barrett's Mill Farm</a>. Currently available for part-time contract work in both software and vegetable fields.
         </p>
         <div style={{display: "inline-block", marginTop: "1.5rem"}}>
           {props.viewProjectsButton}

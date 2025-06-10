@@ -25,9 +25,13 @@
 .about-me-content {
   position: absolute;
   padding: 0px 40px 0px 0px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: .95em;
   line-height: 1.8em;
+}
+
+.about-me-content a {
+  color: #ffb0b0;
 }
 
 .about-me-disappear {

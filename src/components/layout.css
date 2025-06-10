@@ -17,7 +17,8 @@
   --primary-highlight-color: #a76969;
   /* --primary-highlight-color: #75A892; */
   --primary-highlight-color-transparent: #75A89230;
-  --secondary-highlight-color: #D99;
+  /*--secondary-highlight-color: #D99;*/
+  --secondary-highlight-color: #e73c7e;
   /* --secondary-highlight-color: #8E3E3E; */
 }
 
@@ -64,8 +65,8 @@ template {
   display: none;
 }
 footer {
-  background: var(--primary-bg-color);
-  height: 160px;
+  /*background: var(--primary-bg-color);*/
+  /*height: 160px;*/
   width: 100%;
   text-align: center;
   align-items: center;

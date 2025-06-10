@@ -36,8 +36,7 @@
 .social-container-horizontal {
   padding-top: 30px;
   max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0.5em auto;
 }
 
 .social-icon-vertical {

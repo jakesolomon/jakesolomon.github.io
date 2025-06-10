@@ -1,13 +1,31 @@
 .footer-wrapper {
-  max-width: 960px;
+  font-size: 0.7em;
   height: 130px;
-  margin: 5px auto;
+  margin: 0;
   /* padding: 0px 50px; */
   position: absolute;
   right: 0px;
   left: 0px;
   z-index: 1;
-  background-color: transparent;
+
+  /* Gradient animation */
+  /*background: linear-gradient(-45deg, #e73c7e, #23a6d5, #23d5ab);*/
+  /*background: linear-gradient(-45deg, #e31c68, #1d88af, #1daf8d);*/
+  background: linear-gradient(-45deg, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .footer-background-wrapper {

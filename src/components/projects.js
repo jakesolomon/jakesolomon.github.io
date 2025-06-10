@@ -44,8 +44,8 @@ function Projects() {
   );
 
   return(
-    <div style={{marginBottom: "130px"}} id="projects">
-      <div className="projects-container">
+    <div className="projects-wrapper" id="projects">
+      <div className="project-container">
         <h1>Experience</h1>
         <br />
         <div style={{transform: "translateY(-2em)"}}>
@@ -53,13 +53,13 @@ function Projects() {
         </div>
         {aPDesignDescription}
       </div>
-      <div className="projects-container">
+      <div className="project-container">
         <h2>Freelance</h2>
         <img className="project-image" src={areaMockup} alt="location sharing app"/>
         {areaDescription}
         {areaReview}
       </div>
-      <div className="projects-container">
+      <div className="project-container">
         <img className="project-image project-image-large" src={tutorstatMockup} alt="data analytics app"/>
         {tutorstatDescription}
       </div>
