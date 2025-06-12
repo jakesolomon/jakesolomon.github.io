@@ -11,7 +11,7 @@ function Projects() {
 
   const growingGuideDescription = (
     <p className="project-description">
-      <b>The Growing Guide</b> is a personalized month-by-month planning tool for home vegetable gardeners. <br/><br/>
+      <b><a href="https://www.thegrowingguide.com" target="_blank">The Growing Guide</a></b> is a personalized month-by-month planning tool for home vegetable gardeners. <br/><br/>
       I built this project from the ground up as a solo developer,
       designing and developing both the web app and the accompanying guide generation system.
       The app is built with React/TypeScript and uses AWS Amplify to deploy backend services on Lambda.
