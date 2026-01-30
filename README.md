@@ -1,59 +1,33 @@
 # About This Site
 
-This website serves as both a delivery of my job application to Buffer and a demonstration of clean frontend code.
+My personal portfolio site, built from scratch with React and TypeScript on Vite.
+
+I'm Jake Solomon, a React/TypeScript engineer with full-stack experience. I've spent the last five years building production web applications. I care about clean code, thoughtful UI, and shipping things that work well.
 
 ## Tech Stack
 
-- **React 19** with **TypeScript** for type-safe component development
-- **Mantine UI** for a consistent, themeable design system
-- **Vite** for fast development and optimized builds
-- **Vercel Analytics** and **LogRocket** for performance tracking and session replay
+- **React 19** with **TypeScript**
+- **Mantine UI** for theming and responsive layout
+- **Vite** for development and builds
 
 ## Code Highlights
 
-### Theme Management
-Centralized design tokens in `theme.ts`:
-- Custom color palettes (Buffer Green, neutral grays)
-- Typography scales and heading styles
-- Component-level defaults for consistency
-- All defined using Mantine's `createTheme` API
-
-### Responsive Design
-Mobile-first approach with Mantine's responsive utilities:
-- Grid layouts that adapt from mobile to desktop
-- Collapsible burger menu navigation for mobile devices
-- Conditional rendering for different viewport sizes
-- Touch-friendly navigation and interactions
-
-### User Experience
-- Smooth scroll navigation with Mantine hooks
-- Progressive enhancement (Loom player with mobile fallback)
-- Optimized animations and transitions
-- Accessible markup and keyboard navigation
+- Centralized design system via Mantine's `createTheme` API (`theme.ts`)
+- Responsive, mobile-first layout with conditional rendering per viewport
+- Smooth scroll navigation and delayed entrance animations using Mantine hooks
+- Component-driven architecture — reusable `ExperienceEntry` components, shared `LinksGroup`, clean separation of concerns
 
 ## Project Structure
 
 ```
 src/
-├── App.tsx                    # Main application shell
-├── theme.ts                   # Design system configuration
-├── components/
-│   ├── ApplicationQA.tsx      # Structured Q&A content
-│   ├── JobDescriptionSection.tsx
-│   ├── JobAspectCard.tsx      # Reusable card components
-│   ├── WhyJakeSection.tsx
-│   ├── SectionHeader.tsx
-│   └── LoomVideo.tsx          # Video player with fallback
-└── assets/                    # Images and media
+├── App.tsx                # Main application shell
+├── theme.ts               # Design system configuration
+├── ExperienceSection.tsx  # Experience section layout
+├── ExperienceEntry.tsx    # Reusable experience card component
+├── LinksGroup.tsx         # Shared navigation links
+└── assets/                # Images and media
 ```
-
-## Development Practices
-
-- **Component Composition**: Favoring small, focused components over monolithic structures
-- **TypeScript First**: Leveraging types for self-documenting code and catching errors early
-- **Design System**: Consistent theming through centralized configuration
-- **Performance**: Optimized builds, lazy loading, and analytics integration
-- **Accessibility**: Semantic HTML and ARIA attributes where needed
 
 ## Running Locally
 
@@ -62,10 +36,16 @@ npm install
 npm run dev
 ```
 
-Build for production:
+## Build and Deploy
+
 ```bash
 npm run build
+npm run deploy
 ```
+
+## Get in Touch
+
+- [LinkedIn](https://www.linkedin.com/in/jacobcsolomon/)
 
 ---
 

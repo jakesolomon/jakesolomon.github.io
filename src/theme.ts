@@ -1,6 +1,6 @@
 import {createTheme} from '@mantine/core';
 
-const bufferGreen = [
+const siteGreen = [
   'hsl(105 68% 89%)',
   'hsl(105 67% 82%)',
   'hsl(105 68% 77%)',
@@ -13,7 +13,7 @@ const bufferGreen = [
   'hsl(176 20% 16%)'
 ] as const;
 
-const bufferDark = [
+const siteDark = [
   'hsl(0 0% 97%)',
   'hsl(0 0% 89%)',
   'hsl(0 0% 78%)',
@@ -27,10 +27,9 @@ const bufferDark = [
 ] as const;
 
 export const theme = createTheme({
-  primaryColor: 'buffer-green',
   colors: {
-    'buffer-green': bufferGreen,
-    'buffer-dark': bufferDark
+    'site-green': siteGreen,
+    'site-dark': siteDark
   },
   fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
   headings: {
@@ -47,12 +46,12 @@ export const theme = createTheme({
   components: {
     Text: {
       defaultProps: {
-        c: 'buffer-dark.9'
+        c: 'site-dark.9'
       }
     },
     Anchor: {
       defaultProps: {
-        c: 'buffer-green.6', // Override Text's default color for Anchors
+        c: 'site-green.6', // Override Text's default color for Anchors
       },
     },
   }
