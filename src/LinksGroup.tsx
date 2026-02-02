@@ -1,7 +1,7 @@
 import {
   Anchor, Group, Text
 } from '@mantine/core';
-import Resume from "./assets/Jacob-Solomon-2026-Resume.pdf";
+import Resume from "./assets/Jake-Solomon-2026-Resume.pdf";
 
 export interface LinksGroupProps {
   color: "light" | "dark";
