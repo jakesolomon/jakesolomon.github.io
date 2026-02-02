@@ -109,15 +109,15 @@ function App() {
         {/* Experience Header */}
         <Container size="lg" ref={experienceRef} mb="lg">
           <Box py="xl" bg="site-green.9" w="50vw" style={{position: "absolute", left: 0, zIndex: -1}}>
-            <Text size="5rem" c="site-green.2">
+            <Text size="5rem" c="site-green.1">
               {'\u200B'}
             </Text>
           </Box>
           <Stack bg="site-green.9" py="xl">
-            <Text size="3rem" fw="900"  c="site-green.2">
+            <Text size="3rem" fw="900"  c="site-green.1">
               Experience
             </Text>
-            <Text size="1rem" fw="700" c="site-green.2">
+            <Text size="1rem" fw="700" c="site-green.1">
               <em>2020-Present</em>
               {/*Alternatively:*/}
               {/*<em>Full-time and freelance work</em>*/}

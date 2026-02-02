@@ -2,8 +2,6 @@
 
 My personal portfolio site, built from scratch with React and TypeScript on Vite.
 
-I'm Jake Solomon, a React/TypeScript engineer with full-stack experience. I've spent the last five years building production web applications. I care about clean code, thoughtful UI, and shipping things that work well.
-
 ## Tech Stack
 
 - **React 19** with **TypeScript**

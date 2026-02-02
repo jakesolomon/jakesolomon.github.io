@@ -1,6 +1,7 @@
 import {
   Text,
   Box,
+  Anchor,
 } from '@mantine/core';
 import ExperienceEntry, {type ExperienceEntryDetails} from "./ExperienceEntry.tsx";
 
@@ -12,7 +13,7 @@ function ExperienceSection() {
     dates: "2025–Present",
     description:
       <Text>
-        The Growing Guide is a personalized gardening planner that generates customized, month-by-month planting schedules based on users’ locations and climate data.
+        <Anchor target="_blank" href="https://thegrowingguide.com/">The Growing Guide</Anchor> is a personalized gardening planner that generates customized, month-by-month planting schedules based on users’ locations and climate data.
         <br/><br/>
         I built this project solo from concept to production using a React/Typescript frontend, AWS backend services (Lambda, S3, SES), OpenAI integration for content generation, and a dynamic PDF generation pipeline using react-pdf. The app processes payment via Stripe, and fulfills orders with automated email delivery of generated guides. Acquired 300+ free-tier users and achieved a 34% visitor-to-signup conversion rate.
       </Text>
@@ -24,7 +25,7 @@ function ExperienceSection() {
     dates: "2021–2024",
     description:
       <Text>
-        aP Design is an enterprise cost-optimization platform for manufacturing engineers. I worked on this product for three years at aPriori Technologies, joining at the V1 release and contributing to over a dozen features.
+        <Anchor target="_blank" href="https://www.apriori.com/solutions/products/ap-design/">aP Design</Anchor> is an enterprise cost-optimization platform for manufacturing engineers. I worked on this product for three years at aPriori Technologies, joining at the V1 release and contributing to over a dozen features.
         <br/><br/>
         I built full-stack features using React/Typescript on the frontend and Java/Spring Boot microservices on the backend, deployed on AWS. My work included implementing complex UI components, integrating with REST APIs across five backend services, extending internationalization frameworks for global markets, and contributing to database schema design and query optimization. Beyond my technical contributions, I helped modernize the team’s delivery process: leading quarterly planning sessions for cross-team dependency resolution (while reducing average project timeline inflation from over 100% to below 15%), stepping in as scrum master to run Agile ceremonies, and regularly presenting technical demos to stakeholders.
       </Text>
