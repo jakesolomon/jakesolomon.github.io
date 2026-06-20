@@ -7,6 +7,18 @@ import ExperienceEntry, {type ExperienceEntryDetails} from "./ExperienceEntry.ts
 
 function ExperienceSection() {
 
+  const markMacleanPainting: ExperienceEntryDetails = {
+    title: "Mark Maclean Painting",
+    role: "SEO and Web Development",
+    dates: "2026",
+    description:
+      <Text>
+        Mark MacLean Painting came to me looking to run paid ads to drive more business. After assessing their digital presence (a broken website, inconsistent business listings across the web, and an underdeveloped Google Business Profile) I recommended fixing the foundation first.
+        <br/><br/>
+        I audited and optimized their GBP, standardized NAP information across 10 business listings, and built a fast, keyword-targeted <Anchor target="_blank" href="https://www.markmacleanpainting.com/">marketing site</Anchor> from scratch (Next.js, AWS SES). The site scored a <Anchor target="_blank" href="https://lighthouse-metrics.com/lighthouse/checks/30502a34-0a9d-4ee4-b3a3-dec900c02983/runs/6d24f409-de2c-4118-960b-7d9ff37800ca">perfect 100 on Lighthouse SEO and 98 on performance</Anchor>. I then developed an ongoing GBP content campaign, shooting on-site photography and video at two job sites to fuel a series of scheduled posts. The work produced the client's first inbound inquiry within weeks of launch.
+      </Text>
+  }
+
   const theGrowingGuide: ExperienceEntryDetails = {
     title: "The Growing Guide",
     role: "Lead Engineer/Founder",
@@ -53,6 +65,7 @@ function ExperienceSection() {
 
   return (
     <Box>
+      <ExperienceEntry {...markMacleanPainting}/>
       <ExperienceEntry {...theGrowingGuide}/>
       <ExperienceEntry {...aPriori}/>
       <ExperienceEntry {...area}/>
